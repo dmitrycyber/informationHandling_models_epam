@@ -4,6 +4,7 @@ import lombok.Data;
 import by.epamtc.informationHandle.entity.TextElement;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 public class CodeBlock implements TextElement, Serializable {
@@ -12,5 +13,10 @@ public class CodeBlock implements TextElement, Serializable {
     @Override
     public String getString() {
         return codeBlock;
+    }
+
+    @Override
+    public List<Sentence> getSentences() {
+        return null;
     }
 }
